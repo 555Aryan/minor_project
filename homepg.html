@@ -6,52 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sopify</title>
     <link rel="stylesheet" href="homepg.css">
-    <script src="js/home.js"></script>
+    <link rel="Js_file_home" href="homepg.js">
+    <link rel="Js_file_search" href="search.php">
+    <link rel="Js_file" href="homepg.js">
+    <link rel="Nav_js" href="nav.js">
+    <link rel="stylesheet" href="search.html">
+ 
 </head>
-<body>
+ <body>
   <nav class="navbar">
     <div class="nav">
-        <img src="images/sopify.png" class="brand-logo" alt="">
+        <img src="images/sopify.png" class="brand-logo" alt="" style="border-radius: 100px;">
         <div class="nav-items">
+            
             <div class="search">
-                <input type="text" class="search-box" placeholder="search brand, product">
-                <button class="search-btn" ><a href="search.html">Search</a></button>
+                <input type="search" class="search-box" placeholder="search brand, product">
+                <button class="search-btn"><a href="search.html">Search</a></button>
             </div>
+
             <a href="cart.html" target="_blank"><img src="images/cart.png" alt="" width="30px"></a>
-          <a href="portfolio.html" target="_blank" ><img src="images/user.png" alt="" width="30px"></a>
+          <a href="about.html" target="_blank" ><img src="images/user.png" alt="" width="30px"></a>
         </div>
       </div>
   </nav>
-    
-    <ul class="links-container">
-      <li class="link-item"><a href="homepg.html" class="link">home</a></li>
-      <li class="link-item"><a href="#" class="link">women</a></li>
-      <li class="link-item"><a href="#" class="link">men</a></li>
-      <li class="link-item"><a href="#" class="link">kids</a></li>
-      <li class="link-item"><a href="#" class="link">accessories</a></li>
-  </ul>
-  <link rel="Javascript_Nav" href="nav.js">
   
-    </nav>
-    
-    
     <header class="hero-section">
       <div class="content">
           <h1 id="sopify">Sopify</h1>
-          <p class="sub-heading">best fashion collection of all time</p>
+          <p class="sub-heading">Women's best fashion collection of all time</p>
       </div>
-  </header>
+    </header>
     </section>
 
     <section class="product">
-      <h2 class="product-category">best selling</h2>
+      <h2 class="product-category">Top Fashion Brand Products</h2>
+        <button class="pre-btn"><img src="img/arrow.png" alt=""></button>
+        <button class="nxt-btn"><img src="img/arrow.png" alt=""></button>
       <div class="product-container">
         <div class="product-card">
             <div class="product-image">
                 <span class="discount-tag">50% off</span>
                 <img src="images/cloth1.png" class="product-thumb" alt="">
       
-                <button class="card-btn"><a href="cloth1.html">Details</a></button>
+                <button class="card-btn" type="button" value="Detail"><a href="cloth1.html">Details</a></button>
             </div>
             <div class="product-info">
                 <h2 class="product-brand">Myntra</h2>
@@ -63,7 +60,7 @@
           <div class="product-image">
               <span class="discount-tag">50% off</span>
               <img src="images/cloth2.png" class="product-thumb" alt="">
-              <button class="card-btn"><a href="cloth2.html">Details</a></button>
+              <button class="card-btn" type="submit" value="Details" ><a href="cloth2.html">Details</a></button>
               
           </div>
           <div class="product-info">
@@ -71,37 +68,50 @@
               <p class="product-short-des">Women Navy Blue Solid Layered A-Line 10 Cotton Dress</p>
               <span class="price">$20</span><span class="actual-price">$40</span>
           </div>
-      </div>
-
-      <div class="product-card">
-        <div class="product-image">
-            <span class="discount-tag">50% off</span>
-            <img src="images/cloth3.png" class="product-thumb" alt="">
-            
-            <button class="card-btn"><a href="cloth3.html">Details</a></button>
         </div>
-        <div class="product-info">
+
+        <div class="product-card">
+            <div class="product-image">
+                <span class="discount-tag">50% off</span>
+                <img src="images/cloth3.png" class="product-thumb" alt="">
+            
+                <button class="card-btn" type="button" value="Details"><a href="cloth3.html">Details</a></button>
+            </div>
+            <div class="product-info">
             <h2 class="product-brand">Raymond</h2>
             <p class="product-short-des">Here & Now Women Mauve & Black Printed</p>
             <span class="price">$20</span><span class="actual-price">$40</span>
+            </div>
         </div>
-    </div>
 
-    <div class="product-card">
-      <div class="product-image">
-          <span class="discount-tag">50% off</span>
-          <img src="images/cloth4.png" class="product-thumb" alt="">
+        <div class="product-card">
+            <div class="product-image">
+            <span class="discount-tag">50% off</span>
+            <img src="images/cloth4.png" class="product-thumb" alt="">
           
-          <button class="card-btn"><a href="cloth3.html">Details</a></button>
-      </div>
-      <div class="product-info">
+            <button class="card-btn" type="button" value="Details"><a href="cloth4.html">Details</a></button>
+        </div>
+        <div class="product-info">
           <h2 class="product-brand">Denim</h2>
           <p class="product-short-des">URBANIC Off-White & Black Striped A-Line Top</p>
           <span class="price">$20</span><span class="actual-price">$40</span>
-      </div>
-  </div>
-    </div>
-  </section>
+        </div>
+     </div>
+     </div>
+ </section>
+
+ <section class="collection-container">
+    <a class="collection">
+        <img src="images/D-1i.png" alt="">
+        <p class="collection-title">Top <br> Designs</p>
+    </a>
+    <a class="collection">
+        <img src="images/clavia.webp" alt="">
+        <p class="collection-title">Best <br> Selling</p>
+    </a>
+</section>
+
+   
 
   <footer>
     <div class="footer-content">

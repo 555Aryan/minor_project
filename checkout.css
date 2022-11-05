@@ -16,7 +16,7 @@
     display: flex;
     flex-direction: column;
     width: 940px;
-    height: 766px;
+    /*height: 766px;*/
     background-color: rgb(255, 255, 255);
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .2);
   }
@@ -217,15 +217,21 @@
     border-radius: 23px;
   }
    
+  
   .back-btn {
     color: #f62f5e;
     background: #fff;
+    text-decoration: none;
   }
    
   .next-btn {
     color: #fff;
     background: #f62f5e;
+    
   }
+
+  input.next-btn{color: #fff;
+    background: #f62f5e;}
    
   .btn:focus {
     outline: none;

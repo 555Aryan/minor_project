@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout</title>
     <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="checkout.php">
+    
 </head>
 <body>
+  <form action="checkout.php" target="result" method="get">
     <div class="checkout-panel">
         <div class="panel-body">
           <h2 class="title">Checkout</h2>
@@ -28,40 +31,64 @@
        
               <div class="radio-input">
                 <input id="card" type="radio" name="payment">
-                Pay £340.00 with credit card
+                <script src="checkout.php">
+                  print("Pay with credit card"); 
+                  print($TOTAL);
+                </script>
               </div>
             </label>
        
             <label for="paypal" class="method paypal">
               <img src="images/paypal_logo.png" width="100px"/>
-              <div class="radio-input">
+              <div class="radio-input" >
                 <input id="paypal" type="radio" name="payment">
-                Pay £340.00 with PayPal
+                Pay with PayPal
               </div>
             </label>
           </div>
        
           <div class="input-fields">
+            <div><h1>Payment Details</h1></div>
             <div class="column-1">
+              
               <label for="cardholder">Cardholder's Name</label>
-              <input type="text" id="cardholder" />
+              <input type="text" id="cardholder" required/>
        
               <div class="small-inputs">
                 <div>
                   <label for="date">Valid thru</label>
-                  <input type="text" id="date" placeholder="MM / YY" />
+                  <input type="text" id="date" placeholder="MM / YY" required/>
                 </div>
        
                 <div>
                   <label for="verification">CVV / CVC *</label>
-                  <input type="password" id="verification"/>
-                </div>
-              </div>
-       
+                  <input type="password" id="verification" required/>
+                </div><br>
+
+            </div><br>
+            <div><h1>Shipping Details</h1></div>
+            <br>
+            <div>
+              <label for="cardholder">Buyer's Name</label>
+              <input type="text" id="cardholder" placeholder="Nick Johns" required/>
+            </div>
+            <div style="padding:20px;">
+              
+              <label for="cardholder">Delivery Address</label>
+              <input type="text" id="cardholder" placeholder="Apartment, suite, etc." required/>
+              <input type="text" id="cardholder" placeholder="city" required/>
+              <input type="text" id="cardholder" placeholder="pincode" required/>
+              <input type="text" id="cardholder" placeholder="Country" required/>
+            </div><br>
+
+            <div>
+              <label for="cardholder">Contact</label>
+              <input type="number" placeholder="9054 XXX XXX"; id="cardholder" required/>
+            </div>
             </div>
             <div class="column-2">
               <label for="cardnumber">Card Number</label>
-              <input type="password" id="cardnumber"/>
+              <input type="password" id="cardnumber" required/>
        
               <span class="info">* CVV or CVC is the card security code, unique three digits number on the back of your card separate from its number.</span>
             </div>
@@ -69,9 +96,13 @@
         </div>
        
         <div class="panel-footer">
-          <button class="btn back-btn">Back</button>
-          <button class="btn next-btn">Next Step</button>
+          <button class="btn back-btn"><a href="homepg.html">Back</a></button>
+          <button class="btn next-btn" >
+            <input type="submit" value="Submit" /> 
+          </button>
         </div>
       </div>
+    </form>
+      
 </body>
 </html>

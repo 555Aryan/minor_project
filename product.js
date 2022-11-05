@@ -22,3 +22,4 @@ sizeBtns.forEach((item, i) => { // looping through each button
         checkedBtn = i; // upading the variable
     })
 })
+

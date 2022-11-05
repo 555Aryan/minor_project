@@ -6,7 +6,7 @@ html {
   * {
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
-    font-smoothing: antialiased;
+    
   }
   
   @font-face {
@@ -206,3 +206,5 @@ html {
   .btn:hover {
     box-shadow: 0 3px 0 rgba(59,154,198, 0)
   }
+
+  

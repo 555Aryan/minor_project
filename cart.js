@@ -1,6 +1,6 @@
 $('.visibility-cart').on('click',function(){
        
-    var $btn =  $(this);
+    var $btn =  $(this).val();
     var $cart = $('.cart');
     console.log($btn);
     
@@ -24,7 +24,7 @@ $('.visibility-cart').on('click',function(){
     // SHOPPING CART PLUS OR MINUS
     $('a.qty-minus').on('click', function(e) {
       e.preventDefault();
-      var $this = $(this);
+      var $this = $(this).val();
       var $input = $this.closest('div').find('input');
       var value = parseInt($input.val());
       
